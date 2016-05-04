@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+	<h:head>
+		<title>Formulario de cadastro</title>
+	</h:head> 
+	<body> 
+		<h:form>
+			<div>
+				<h:outputLabel value="Título" />
+				<h:inputText />
+			</div>
+			<div>
+				<h:outputLabel value="Descrição" />
+				<h:inputTextarea cols="20" rows="10" />
+			</div>
+			<div>
+				<h:outputLabel value="Número de páginas" />
+				<h:inputText />
+			</div>
+			<div>
+				<h:outputLabel value="Preço" />
+				<h:inputText />
+			</div>
+			
+			<h:commandButton value="Gravar" action="#{adminBooksBean.save}" />
+		</h:form>
+	</body> 
+</html>
